@@ -1742,7 +1742,7 @@ program
             this.missingArgument("file");
             return;
         }
-        require("./lib/webdav").cli.deleteFile(instance, "/" + target, file, true, {
+        require("./lib/webdav").cli.getFile(instance, "/" + target, file, true, {
             pfx: options.certificate,
             passphrase: options.passphrase,
         });
